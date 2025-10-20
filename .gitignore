@@ -1,0 +1,76 @@
+## ===== Archivos de Visual Studio =====
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ===== Carpetas de compilación =====
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+*.pdb
+*.cache
+*.log
+*.dbmdl
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.tlog
+
+## ===== Archivos de publicación =====
+publish/
+_PublishedWebsites/
+*.Publish.xml
+
+## ===== Paquetes NuGet =====
+packages/
+*.nupkg
+*.nuspec
+project.lock.json
+
+# Permitir archivos necesarios del build de NuGet
+!packages/build/
+
+## ===== Archivos temporales =====
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+
+## ===== Archivos de configuración local =====
+web.config.user
+app.config.user
+*.local.config
+
+## ===== Archivos de prueba =====
+TestResult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## ===== ReSharper / Rider =====
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+.idea/
+
+## ===== VS Code (si usas también VSCode) =====
+.vscode/
+*.code-workspace
+
+## ===== Sistema operativo =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## ===== Otros =====
+*.vspscc
+*.vssscc
