@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\webapi\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:webapi\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\services\\menuserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:services\\menuserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\persitences\\menurepimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:persitences\\menurepimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\entitys\\menuentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:entitys\\menuentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\entitys\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:entitys\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\webapi\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:webapi\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\responses\\respmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:responses\\respmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|c:\\users\\jermp\\onedrive\\documentos\\codigos\\c#\\webapischool\\persitences\\menurep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE426235-C7A3-4D6A-AE44-5158D8778FA3}|WebApiSchool.csproj|solutionrelative:persitences\\menurep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuServiceImp.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Services\\MenuServiceImp.cs",
+              "RelativeDocumentMoniker": "Services\\MenuServiceImp.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Services\\MenuServiceImp.cs",
+              "RelativeToolTip": "Services\\MenuServiceImp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T13:09:07.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuEntity.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Entitys\\MenuEntity.cs",
+              "RelativeDocumentMoniker": "Entitys\\MenuEntity.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Entitys\\MenuEntity.cs",
+              "RelativeToolTip": "Entitys\\MenuEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T13:07:07.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioEntity.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Entitys\\UsuarioEntity.cs",
+              "RelativeDocumentMoniker": "Entitys\\UsuarioEntity.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Entitys\\UsuarioEntity.cs",
+              "RelativeToolTip": "Entitys\\UsuarioEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T13:07:17.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\App_Start\\UnityConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\UnityConfig.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\App_Start\\UnityConfig.cs",
+              "RelativeToolTip": "App_Start\\UnityConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T13:06:00.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\WebApi\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApi\\AuthController.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\WebApi\\AuthController.cs",
+              "RelativeToolTip": "WebApi\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:56:18.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Global.asax.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Global.asax.cs",
+              "RelativeToolTip": "Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:55:51.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\WebApi\\MenuController.cs",
+              "RelativeDocumentMoniker": "WebApi\\MenuController.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\WebApi\\MenuController.cs",
+              "RelativeToolTip": "WebApi\\MenuController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:54:06.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-20T12:54:06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RespMenu.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Responses\\RespMenu.cs",
+              "RelativeDocumentMoniker": "Responses\\RespMenu.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Responses\\RespMenu.cs",
+              "RelativeToolTip": "Responses\\RespMenu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:35:56.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuRepImp.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Persitences\\MenuRepImp.cs",
+              "RelativeDocumentMoniker": "Persitences\\MenuRepImp.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Persitences\\MenuRepImp.cs",
+              "RelativeToolTip": "Persitences\\MenuRepImp.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBMAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:55:19.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuRep.cs",
+              "DocumentMoniker": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Persitences\\MenuRep.cs",
+              "RelativeDocumentMoniker": "Persitences\\MenuRep.cs",
+              "ToolTip": "C:\\Users\\jermp\\OneDrive\\Documentos\\codigos\\C#\\WebApiSchool\\Persitences\\MenuRep.cs",
+              "RelativeToolTip": "Persitences\\MenuRep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:54:13.851Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
