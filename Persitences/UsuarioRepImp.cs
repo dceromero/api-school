@@ -15,7 +15,7 @@ namespace WebApiSchool.Persitences
         public UsuarioEntity GetUsuario(ReqUser reqUser)
         {
             string sqlGetUsuario = "Select NombreComp ,NombreUsr,dbo.fnc_ctr('turbopascal',contrasenaUsr) password, GrupoUsr from w2usuarios " +
-            $"where Estado in ('A') and dbo.fnc_ctr('turbopascal',contrasenaUsr) = '{reqUser.constraseña}' " +
+            $"where Estado in ('A') and dbo.fnc_ctr('turbopascal',contrasenaUsr) = '{reqUser.password}' " +
             $"and NombreUsr ='{reqUser.nombreUsu}' ";
             return _context.Database.SqlQuery<UsuarioEntity>(sqlGetUsuario).FirstOrDefault();
         }

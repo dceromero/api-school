@@ -113,3 +113,6 @@ C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\Microsoft.Identit
 C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\Microsoft.IdentityModel.Tokens.pdb
 C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\System.Web.Cors.dll
+C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\System.Web.Http.Cors.dll
+C:\Users\jermp\OneDrive\Documentos\codigos\C#\WebApiSchool\bin\System.Web.Http.Cors.xml
