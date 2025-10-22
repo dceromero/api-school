@@ -209,6 +209,7 @@
     <Compile Include="Services\UsuarioServiceImp.cs" />
     <Compile Include="WebApi\AuthController.cs" />
     <Compile Include="WebApi\MenuController.cs" />
+    <Compile Include="WebApi\TokenController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
