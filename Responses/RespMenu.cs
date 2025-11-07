@@ -16,6 +16,9 @@ namespace WebApiSchool.Responses
         public string Descripcion { get; set; }
 
         [DataMember]
+        public string Icon { get; set; }
+
+        [DataMember]
         public List<RespSubMenu> subMenu { get; set; }
     }
 }

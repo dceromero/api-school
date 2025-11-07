@@ -24,12 +24,15 @@ namespace WebApiSchool.Services
                 {
                     Opcion = me.opcion,
                     Descripcion = me.descripcion,
+                    Icon = me.iconOption,
                     subMenu = menuEntities
                         .Where(se => se.nodoPadre == me.secuencia && se.tipoOp == "O")
                         .Select(se => new RespSubMenu
                         {
                             Opcion = se.opcion,
                             Descripcion = se.descripcion,
+                            Url = se.urlOption,
+                            Icon = se.iconOption
                         }).ToList()
                 }).ToList();
             return respMenus;

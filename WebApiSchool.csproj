@@ -187,6 +187,13 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Entitys\LogroEntity.cs" />
+    <Compile Include="Persitences\LogrosRep.cs" />
+    <Compile Include="Persitences\LogrosRepImp.cs" />
+    <Compile Include="Requests\ReqFindLogros.cs" />
+    <Compile Include="Requests\ReqSaveLogros.cs" />
+    <Compile Include="Responses\RespAsignatura.cs" />
+    <Compile Include="Responses\RespGrado.cs" />
     <Compile Include="Entitys\MenuEntity.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,18 +205,29 @@
     <Compile Include="Persitences\UsuarioRep.cs" />
     <Compile Include="Persitences\UsuarioRepImp.cs" />
     <Compile Include="Entitys\UsuarioEntity.cs" />
+    <Compile Include="Entitys\VecimientosEntity.cs" />
+    <Compile Include="Persitences\VencimientosRep.cs" />
+    <Compile Include="Persitences\VencimientosRepImp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\ReqUser.cs" />
+    <Compile Include="Responses\RespLogro.cs" />
     <Compile Include="Responses\RespMenu.cs" />
     <Compile Include="Responses\RespSubMenu.cs" />
     <Compile Include="Responses\RespUsuario.cs" />
+    <Compile Include="Responses\RespVencimiento.cs" />
+    <Compile Include="Services\LogroService.cs" />
+    <Compile Include="Services\LogroServiceImp.cs" />
     <Compile Include="Services\MenuService.cs" />
     <Compile Include="Services\MenuServiceImp.cs" />
     <Compile Include="Services\UsuarioService.cs" />
     <Compile Include="Services\UsuarioServiceImp.cs" />
+    <Compile Include="Services\VencimientosService.cs" />
+    <Compile Include="Services\VencimientosServiceImp.cs" />
     <Compile Include="WebApi\AuthController.cs" />
+    <Compile Include="WebApi\LogroController.cs" />
     <Compile Include="WebApi\MenuController.cs" />
     <Compile Include="WebApi\TokenController.cs" />
+    <Compile Include="WebApi\VencimientosController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

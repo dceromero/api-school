@@ -10,6 +10,9 @@ namespace WebApiSchool.Entitys
         public int nodoPadre { get; set; }
         public string tipoOp { get; set; }
         public int secuencia { get; set; }
+        public string urlOption { get; set; }
+        public string iconOption { get; set; }
+
 
 
     }

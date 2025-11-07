@@ -15,6 +15,8 @@ namespace WebApiSchool.Mapper
             response.fullname = entity.nombreComp;
             response.userName = entity.nombreUsr;
             response.userGroup = entity.grupoUsr;
+            response.yearActual = entity.yearDefault;
+            response.periodo = entity.defaultPeriodo;
             return response;
         }
     }

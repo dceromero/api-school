@@ -13,5 +13,11 @@ namespace WebApiSchool.Responses
 
         [DataMember]
         public string userGroup { get; set; }
+
+        [DataMember] 
+        public string yearActual { get; set; }
+
+        [DataMember]
+        public string periodo { get; set; }
     }
 }

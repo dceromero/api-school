@@ -7,19 +7,19 @@ using System.Web;
 namespace WebApiSchool.Responses
 {
     [DataContract]
-    public class RespSubMenu
+    public class RespVencimiento
     {
-        [DataMember]
-        public string Opcion { get; set; }
-
 
         [DataMember]
-        public string Descripcion { get; set; }
+        public string grado { get; set; }
 
         [DataMember]
-        public string Url { get; set; }
+        public string grupo { get; set; }
 
         [DataMember]
-        public string Icon { get; set; }
+        public string asignatura { get; set; }
+
+        [DataMember]
+        public string fechaVencimiento { get; set; }
     }
 }

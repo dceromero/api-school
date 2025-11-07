@@ -22,6 +22,12 @@ namespace WebApiSchool
             container.RegisterType<MenuRep, MenuRepImp>();
             container.RegisterType<MenuService, MenuServiceImp>();
 
+            container.RegisterType<VencimientosRep, VencimientosRepImp>();
+            container.RegisterType<VencimientosService, VencimientosServiceImp>();
+
+            container.RegisterType<LogrosRep, LogrosRepImp>();
+            container.RegisterType<LogroService, LogroServiceImp>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
