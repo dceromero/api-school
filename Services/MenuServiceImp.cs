@@ -26,7 +26,7 @@ namespace WebApiSchool.Services
                     Descripcion = me.descripcion,
                     Icon = me.iconOption,
                     subMenu = menuEntities
-                        .Where(se => se.nodoPadre == me.secuencia && se.tipoOp == "O")
+                        .Where(se => se.nodoPadre == me.secuencia && se.tipoOp == "_DLG")                        
                         .Select(se => new RespSubMenu
                         {
                             Opcion = se.opcion,

@@ -192,6 +192,7 @@
     <Compile Include="Persitences\LogrosRepImp.cs" />
     <Compile Include="Requests\ReqFindLogros.cs" />
     <Compile Include="Requests\ReqSaveLogros.cs" />
+    <Compile Include="Requests\ReqUpdateLogros.cs" />
     <Compile Include="Responses\RespAsignatura.cs" />
     <Compile Include="Responses\RespGrado.cs" />
     <Compile Include="Entitys\MenuEntity.cs" />

@@ -12,7 +12,8 @@ namespace WebApiSchool.Persitences
     public interface LogrosRep
     {
         List<LogroEntity> GetLogrosByUserGradoAsignPer(ReqFindLogros findLogros);
-        List<RespLogro> SaveLogros(ReqSaveLogros findLogros);
-        List<RespLogro> UpdateLogros(ReqSaveLogros findLogros);
+        int SaveLogros(ReqSaveLogros findLogros);
+        int UpdateLogros(ReqUpdateLogros findLogros);
+        int deleteLogros(string codLogro);
     }
 }

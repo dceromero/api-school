@@ -21,5 +21,14 @@ namespace WebApiSchool.Responses
 
         [DataMember]
         public string fechaVencimiento { get; set; }
+
+        [DataMember]
+        public int periodo { get; set; }
+
+        [DataMember]
+        public int cantLogros { get; set; }
+
+        [DataMember]
+        public int cantNotasIng { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace WebApiSchool.Persitences
         {
             _context = context;
         }
+
         public List<LogroEntity> GetLogrosByUserGradoAsignPer(ReqFindLogros findLogros)
         {
             StringBuilder sqlGetLogrosByUserGradoAsignPer = new StringBuilder("SELECT * FROM vw_logros ");
@@ -26,20 +27,30 @@ namespace WebApiSchool.Persitences
             return _context.Database.SqlQuery<LogroEntity>(sqlGetLogrosByUserGradoAsignPer.ToString()).ToList();
         }
 
-        public List<RespLogro> SaveLogros(ReqSaveLogros saveLogros)
+        public int SaveLogros(ReqSaveLogros saveLogros)
         {
             StringBuilder sqlSaveLogros = new StringBuilder($"insert into B3Indicadores values (dbo.fnc_get_Parameter('Default_ano'), ");
-            sqlSaveLogros.AppendLine($"dbo.fnc_get_max_id_codLogro(), ");
-            sqlSaveLogros.AppendLine($"'{saveLogros.descLogro.ToUpper()}', {saveLogros.periodo}, {saveLogros.cantNotas}, {saveLogros.pc1 }, ");
+            sqlSaveLogros.AppendLine($" '0', '{saveLogros.descLogro.ToUpper()}', {saveLogros.periodo}, {saveLogros.cantNotas}, {saveLogros.pc1 }, ");
             sqlSaveLogros.AppendLine($"{saveLogros.pc2 }, {saveLogros.pc3 }, {saveLogros.pc4 }, 1, 1, 1, 0, '{saveLogros.usuario}', 'Web', getDate(), ");
-            sqlSaveLogros.AppendLine($"'{saveLogros.codGrado}', '{saveLogros.codAsignatura}', dbo.fnc_get_max_consecut(), dbo.fnc_get_max_id_indicadores() ) ");
+            sqlSaveLogros.AppendLine($"'{saveLogros.codGrado}', '{saveLogros.codAsignatura}', dbo.fnc_get_max_consecut() ) ");
             string tsql = sqlSaveLogros.ToString();
-            throw new System.NotImplementedException();
+            return _context.Database.ExecuteSqlCommand(tsql);
         }
 
-        public List<RespLogro> UpdateLogros(ReqSaveLogros findLogros)
+        public int UpdateLogros(ReqUpdateLogros updateLogros)
         {
-            throw new System.NotImplementedException();
+            StringBuilder sqlSaveLogros = new StringBuilder($"update B3Indicadores set cantNotas='{updateLogros.cantNotas}', ");
+            sqlSaveLogros.AppendLine($"textoLg='{updateLogros.textoLg}', pc1={updateLogros.pc1}, pc2={updateLogros.pc2}, ");
+            sqlSaveLogros.AppendLine($"pc3={updateLogros.pc3}, pc4={updateLogros.pc4} ");
+            sqlSaveLogros.Append($"Where codLogro ='{updateLogros.codLogro}'");
+            string tsql = sqlSaveLogros.ToString();
+            return _context.Database.ExecuteSqlCommand(tsql);
+        }
+
+        public int deleteLogros(string codLogro)
+        {
+            string tsql = $"delete from B3Indicadores Where codLogro ='{codLogro}'";
+            return _context.Database.ExecuteSqlCommand(tsql);
         }
     }
 }

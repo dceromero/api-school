@@ -14,5 +14,6 @@ namespace WebApiSchool.Responses
         public decimal pc2 { get; set; }
         public decimal pc3 { get; set; }
         public decimal pc4 { get; set; }
+        public int cantLogros { get; set; }
     }
 }

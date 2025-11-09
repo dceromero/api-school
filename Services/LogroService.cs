@@ -9,5 +9,6 @@ namespace WebApiSchool.Services
         List<RespLogro> FindLogrosByUserGradoAsignPer(ReqFindLogros findLogros);
         List<RespLogro> SaveLogros(ReqSaveLogros saveLogros);
         List<RespLogro> UpdateLogros(ReqSaveLogros updateLogros);
+        List<RespLogro> deleteLogros(string codLogro, ReqFindLogros updateLogros);
     }
 }

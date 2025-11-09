@@ -33,5 +33,21 @@ namespace WebApiSchool.WebApi
             var logros = _logroService.SaveLogros(saveLogros);
             return Request.CreateResponse(HttpStatusCode.OK, logros);
         }
+
+        [HttpPut]
+        [Route("update-logros")]
+        public HttpResponseMessage updateLogros(ReqSaveLogros findLogros)
+        {
+            var logros = _logroService.UpdateLogros(findLogros);
+            return Request.CreateResponse(HttpStatusCode.OK, logros);
+        }
+
+        [HttpDelete]
+        [Route("delete-logros")]
+        public HttpResponseMessage deleteLogros(string codLogro, ReqFindLogros find)
+        {
+            var result = _logroService.deleteLogros(codLogro, find);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
 }

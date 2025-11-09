@@ -31,10 +31,12 @@ namespace WebApiSchool.Services
         {
             return repository.GetVencimientos(user).Select(data =>  new RespVencimiento
             {
-                grado = data.descGrado,
-                grupo = data.grupo,
+                grado = $"{data.codGrado}-{data.descGrado}",
                 asignatura = data.asignatura,
-                fechaVencimiento = data.fechaVigencia
+                fechaVencimiento = data.fechaVigencia,
+                periodo = data.periodo,
+                cantLogros = data.cantLogros,
+                cantNotasIng = data.cantNotasIng
             }).ToList();
         }
     }
