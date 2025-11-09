@@ -1,7 +1,8 @@
 .vs
 .vs/
-bin/
-obj/
+bin
+bin/*.*
+obj/*.*
 packages
 Properties
 .sln
