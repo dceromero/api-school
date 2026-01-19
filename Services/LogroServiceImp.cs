@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebApiSchool.Entitys;
 using WebApiSchool.Persitences;
 using WebApiSchool.Requests;
 using WebApiSchool.Responses;
 
 namespace WebApiSchool.Services
 {
-    public class LogroServiceImp: LogroService
+    public class LogroServiceImp : LogroService
     {
         private readonly LogrosRep _logrosRep;
 
@@ -49,9 +50,9 @@ namespace WebApiSchool.Services
 
         public List<RespLogro> SaveLogros(ReqSaveLogros saveLogros)
         {
-           if(_logrosRep.SaveLogros(saveLogros) > 0)
+            if (_logrosRep.SaveLogros(saveLogros) > 0)
             {
-              return FindLogrosByUserGradoAsignPer(new ReqFindLogros
+                return FindLogrosByUserGradoAsignPer(new ReqFindLogros
                 {
                     codAsignatura = saveLogros.codAsignatura,
                     codGrado = saveLogros.codGrado,
@@ -84,6 +85,21 @@ namespace WebApiSchool.Services
                 });
             }
             throw new NotImplementedException("Contacte al Administrador");
+        }
+
+        public string GetCodPlanilla(ReqGetCodPlanilla reqCodPlanilla)
+        {
+            return _logrosRep.GetCodPlanilla(reqCodPlanilla);
+        }
+
+        public List<LogroEntity> getLogrosByPlanilla(string codPlanilla, string usuario)
+        {
+            return _logrosRep.GetLogrosByPlanilla(codPlanilla, usuario);
+        }
+
+        public List<RespVWNotas> getNotasByCodLogro(string codLogro, string idPlanilla)
+        {
+            return _logrosRep.getNotasByCodLogro(codLogro, idPlanilla);
         }
     }
 }

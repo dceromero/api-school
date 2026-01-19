@@ -28,6 +28,12 @@ namespace WebApiSchool
             container.RegisterType<LogrosRep, LogrosRepImp>();
             container.RegisterType<LogroService, LogroServiceImp>();
 
+            container.RegisterType<EvaluacionesRep, EvaluacionesRepImp>();
+            container.RegisterType<EvaluacionService, EvaluacionServiceImp>();  
+
+            container.RegisterType<NotasRep, NotasRepImp>();
+            container.RegisterType<NotasService, NotasServiceImp>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

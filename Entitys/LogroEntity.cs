@@ -7,6 +7,7 @@ namespace WebApiSchool.Entitys
 {
     public class LogroEntity
     {
+        public int idPlanilla { get; set; }
         public string codLogro { get; set; }
         public string textoLg { get; set; }
         public int cantNotas { get; set; }

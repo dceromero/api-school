@@ -49,5 +49,29 @@ namespace WebApiSchool.WebApi
             var result = _logroService.deleteLogros(codLogro, find);
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
+
+        [HttpPost]
+        [Route("get-codigo-planilla")]
+        public HttpResponseMessage getCodigoPlanilla(ReqGetCodPlanilla find)
+        {
+            var codigoPlanilla = _logroService.GetCodPlanilla(find);
+            return Request.CreateResponse(HttpStatusCode.OK, codigoPlanilla);
+        }
+
+        [HttpGet]
+        [Route("get-logros-by-cod-planilla")]
+        public HttpResponseMessage getLogrosByCodPlanilla(string codPlanilla, string usuario)
+        {
+            var logros = _logroService.getLogrosByPlanilla(codPlanilla, usuario);
+            return Request.CreateResponse(HttpStatusCode.OK, logros);
+        }
+
+        [HttpGet]
+        [Route("get-studient-by-cod-logro")]
+        public HttpResponseMessage getStudientByCodLogro(string codLogro, string idPlanilla)
+        {
+            var students = _logroService.getNotasByCodLogro(codLogro, idPlanilla);
+            return Request.CreateResponse(HttpStatusCode.OK, students);
+        }
     }
 }

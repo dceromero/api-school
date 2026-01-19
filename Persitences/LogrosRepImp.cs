@@ -30,8 +30,8 @@ namespace WebApiSchool.Persitences
         public int SaveLogros(ReqSaveLogros saveLogros)
         {
             StringBuilder sqlSaveLogros = new StringBuilder($"insert into B3Indicadores values (dbo.fnc_get_Parameter('Default_ano'), ");
-            sqlSaveLogros.AppendLine($" '0', '{saveLogros.descLogro.ToUpper()}', {saveLogros.periodo}, {saveLogros.cantNotas}, {saveLogros.pc1 }, ");
-            sqlSaveLogros.AppendLine($"{saveLogros.pc2 }, {saveLogros.pc3 }, {saveLogros.pc4 }, 1, 1, 1, 0, '{saveLogros.usuario}', 'Web', getDate(), ");
+            sqlSaveLogros.AppendLine($" '0', '{saveLogros.descLogro.ToUpper()}', {saveLogros.periodo}, {saveLogros.cantNotas}, {saveLogros.pc1}, ");
+            sqlSaveLogros.AppendLine($"{saveLogros.pc2}, {saveLogros.pc3}, {saveLogros.pc4}, 1, 1, 1, 0, '{saveLogros.usuario}', 'Web', getDate(), ");
             sqlSaveLogros.AppendLine($"'{saveLogros.codGrado}', '{saveLogros.codAsignatura}', dbo.fnc_get_max_consecut() ) ");
             string tsql = sqlSaveLogros.ToString();
             return _context.Database.ExecuteSqlCommand(tsql);
@@ -40,7 +40,7 @@ namespace WebApiSchool.Persitences
         public int UpdateLogros(ReqUpdateLogros updateLogros)
         {
             StringBuilder sqlSaveLogros = new StringBuilder($"update B3Indicadores set cantNotas='{updateLogros.cantNotas}', ");
-            sqlSaveLogros.AppendLine($"textoLg='{updateLogros.textoLg}', pc1={updateLogros.pc1}, pc2={updateLogros.pc2}, ");
+            sqlSaveLogros.AppendLine($"textoLg='{updateLogros.textoLg.ToUpper()}', pc1={updateLogros.pc1}, pc2={updateLogros.pc2}, ");
             sqlSaveLogros.AppendLine($"pc3={updateLogros.pc3}, pc4={updateLogros.pc4} ");
             sqlSaveLogros.Append($"Where codLogro ='{updateLogros.codLogro}'");
             string tsql = sqlSaveLogros.ToString();
@@ -51,6 +51,26 @@ namespace WebApiSchool.Persitences
         {
             string tsql = $"delete from B3Indicadores Where codLogro ='{codLogro}'";
             return _context.Database.ExecuteSqlCommand(tsql);
+        }
+
+        public string GetCodPlanilla(ReqGetCodPlanilla reqCodPlanilla)
+        {
+            StringBuilder sqlGetCodPlanilla = new StringBuilder($"SELECT dbo.Fnc_getCodplanilla('{reqCodPlanilla.codGrado}','{reqCodPlanilla.grupo}',  ");
+            sqlGetCodPlanilla.AppendLine($" '{reqCodPlanilla.periodo}', '{reqCodPlanilla.codAsignatura}') ");
+            var result = _context.Database.SqlQuery<string>(sqlGetCodPlanilla.ToString()).FirstOrDefault();
+            return result;
+        }
+
+        public List<LogroEntity> GetLogrosByPlanilla(string codPlanilla, string usuario)
+        {
+            StringBuilder sqlGetLogrosByUserGradoAsignPer = new StringBuilder($"exec Pr_getListaLogros '{codPlanilla}','{usuario}','webApi' ");
+            return _context.Database.SqlQuery<LogroEntity>(sqlGetLogrosByUserGradoAsignPer.ToString()).ToList();
+        }
+
+        public List<RespVWNotas> getNotasByCodLogro(string codLogro, string idPlanilla)
+        {
+            string tsql = $"SELECT * FROM vw_calificar_logros WHERE CodLogro = '{codLogro}' and idPlanilla ='{idPlanilla}'";
+            return _context.Database.SqlQuery<RespVWNotas>(tsql).ToList();
         }
     }
 }
