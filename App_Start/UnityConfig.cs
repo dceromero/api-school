@@ -34,6 +34,9 @@ namespace WebApiSchool
             container.RegisterType<NotasRep, NotasRepImp>();
             container.RegisterType<NotasService, NotasServiceImp>();
 
+            container.RegisterType<ObservadorNotaRep, ObservadorNotaRepImp>();
+            container.RegisterType<ObsNotaService, ObsNotaServiceImp>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

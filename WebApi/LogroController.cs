@@ -13,9 +13,11 @@ namespace WebApiSchool.WebApi
     public class LogroController : ApiController
     {
         private readonly Services.LogroService _logroService;
-        public LogroController(Services.LogroService logroService)
+        private readonly Services.ObsNotaService _obsNotaService;
+        public LogroController(Services.LogroService logroService, Services.ObsNotaService obsNotaService)
         {
             _logroService = logroService;
+            _obsNotaService = obsNotaService;
         }
 
         [HttpPost]
@@ -73,5 +75,30 @@ namespace WebApiSchool.WebApi
             var students = _logroService.getNotasByCodLogro(codLogro, idPlanilla);
             return Request.CreateResponse(HttpStatusCode.OK, students);
         }
+
+        [HttpPost]
+        [Route("save-observador-nota")]
+        public HttpResponseMessage saveObservadorNota(ReqObsNotas obsNotas)
+        {
+            var result = _obsNotaService.saveObservadorNota(obsNotas);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpGet]
+        [Route("get-observador-nota")]
+        public HttpResponseMessage getObservadorNota(int idPlanilla, int idMatricula, string codLogro)
+        {
+            var result = _obsNotaService.getObsNota(idPlanilla, idMatricula, codLogro);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpDelete]
+        [Route("delete-observador-nota")]
+        public HttpResponseMessage deleteObservadorNota(int idRegOb)
+        {
+            var result = _obsNotaService.deleteObsNota(idRegOb);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
     }
+
 }

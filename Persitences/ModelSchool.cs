@@ -15,10 +15,6 @@ namespace WebApiSchool.Persitences
 
         public virtual DbSet<MenuEntity> MenuEntities { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-          //  modelBuilder.Entity<UsuarioEntity>()
-           //     .HasKey(e => e.nombreUsr);
-        }
+    
     }
 }

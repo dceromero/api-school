@@ -16,5 +16,6 @@ namespace WebApiSchool.Responses
         public decimal n2 { get; set; }
         public decimal n3 { get; set; }
         public decimal n4 { get; set; }
+        public int numSemana { get; set; }
     }
 }

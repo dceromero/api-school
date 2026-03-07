@@ -19,9 +19,25 @@ namespace WebApiSchool.WebApi
         }
         [HttpPost]
         [Route("save")]
-        public HttpResponseMessage SaveNota(ReqSaveNota save)
+        public HttpResponseMessage SaveNota(List<ReqSaveNota> save)
         {
             _notasService.saveNota(save);
+            return Request.CreateResponse(HttpStatusCode.Created);
+        }
+
+        [HttpGet]
+        [Route("other-notes")]
+        public HttpResponseMessage GetOtherNotes(string codPlanilla, string usuario)
+        {
+            var result = _notasService.getOtherNote(codPlanilla, usuario);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpPost]
+        [Route("save-other-note")]
+        public HttpResponseMessage SaveOtherNote(List<ReqSaveOtherNote> saveOtherNote)
+        {
+            _notasService.SaveOtherNote(saveOtherNote);
             return Request.CreateResponse(HttpStatusCode.Created);
         }
     }
