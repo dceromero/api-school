@@ -43,13 +43,14 @@ namespace WebApiSchool.Persitences
             sqlSaveLogros.AppendLine($"textoLg='{updateLogros.textoLg.ToUpper()}', pc1={updateLogros.pc1}, pc2={updateLogros.pc2}, ");
             sqlSaveLogros.AppendLine($"pc3={updateLogros.pc3}, pc4={updateLogros.pc4} ");
             sqlSaveLogros.Append($"Where codLogro ='{updateLogros.codLogro}'");
+            sqlSaveLogros.AppendLine($"AND ano = dbo.Fnc_Defano()");
             string tsql = sqlSaveLogros.ToString();
             return _context.Database.ExecuteSqlCommand(tsql);
         }
 
         public int deleteLogros(string codLogro)
         {
-            string tsql = $"delete from B3Indicadores Where codLogro ='{codLogro}'";
+            string tsql = $"delete from B3Indicadores Where codLogro ='{codLogro}' AND ano = dbo.Fnc_Defano()";
             return _context.Database.ExecuteSqlCommand(tsql);
         }
 
