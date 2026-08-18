@@ -9,7 +9,7 @@ namespace WebApiSchool.WebApi
     [RoutePrefix("api/menu")]
     public class MenuController : ApiController
     {
-       private readonly MenuService service;
+        private readonly MenuService service;
 
         public MenuController(MenuService _service)
         {

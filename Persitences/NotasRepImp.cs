@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web;
 using WebApiSchool.Entitys;
 using WebApiSchool.Requests;
 
@@ -20,7 +18,7 @@ namespace WebApiSchool.Persitences
             StringBuilder tsql = new StringBuilder($"update B1SeguimientosNt set n1 ='{req.n1}', n2 ='{req.n2}', n3='{req.n3}', n4='{req.n4}' ");
             tsql.AppendLine($"where idmatricula = {req.idmatricula} and idPlanilla = {req.idPlanilla} and CodLogro = '{req.CodLogro}'");
             ModelSchool modelSchool = new ModelSchool();
-             modelSchool.Database.ExecuteSqlCommand(tsql.ToString());
+            modelSchool.Database.ExecuteSqlCommand(tsql.ToString());
         }
         public void saveNota(List<ReqSaveNota> req)
         {

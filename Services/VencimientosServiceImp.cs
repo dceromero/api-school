@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using WebApiSchool.Entitys;
 using WebApiSchool.Persitences;
 using WebApiSchool.Responses;
@@ -19,7 +17,7 @@ namespace WebApiSchool.Services
 
         public List<RespAsignatura> GetAsignaturas(string user, string grado)
         {
-            return repository.GetAsignaturas(user,grado);
+            return repository.GetAsignaturas(user, grado);
         }
 
         public List<RespGrado> GetGrados(string user)
@@ -29,7 +27,7 @@ namespace WebApiSchool.Services
 
         public List<RespVencimiento> GetVencimientos(string user)
         {
-            return repository.GetVencimientos(user).Select(data =>  new RespVencimiento
+            return repository.GetVencimientos(user).Select(data => new RespVencimiento
             {
                 grado = $"{data.codGrado}-{data.descGrado}",
                 asignatura = data.asignatura,

@@ -14,7 +14,7 @@ namespace WebApiSchool.Services
         }
         public RespUsuario GetUsuario(ReqUser reqUser)
         {
-           return UsuarioMapper.entityToResponse(repository.GetUsuario(reqUser));
+            return UsuarioMapper.entityToResponse(repository.GetUsuario(reqUser));
         }
     }
 }

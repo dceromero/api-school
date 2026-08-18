@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using WebApiSchool.Persitences;
 using WebApiSchool.Responses;
 
@@ -18,12 +15,12 @@ namespace WebApiSchool.Services
 
         public List<RespObsNota> getObsNota(int idPlanilla, int idMatricula, string codLogro)
         {
-           return  _repository.getObsNota(idPlanilla, idMatricula, codLogro);
+            return _repository.getObsNota(idPlanilla, idMatricula, codLogro);
         }
 
         public RespHelperEval saveObservadorNota(ReqObsNotas obsNotas)
         {
-           return _repository.saveObservadorNota(obsNotas);
+            return _repository.saveObservadorNota(obsNotas);
         }
 
         public RespHelperEval deleteObsNota(int idRegOb)

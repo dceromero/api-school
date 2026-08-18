@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using WebApiSchool.Persitences;
 using WebApiSchool.Responses;
 
@@ -11,7 +9,7 @@ namespace WebApiSchool.Services
     {
         private readonly EvaluacionesRep _persitencia;
 
-        public EvaluacionServiceImp(EvaluacionesRep persitencia )
+        public EvaluacionServiceImp(EvaluacionesRep persitencia)
         {
             _persitencia = persitencia;
         }
@@ -22,7 +20,7 @@ namespace WebApiSchool.Services
                 {
                     valor = te.valor,
                     descripcion = te.descripcion
-                }).ToList();    
+                }).ToList();
         }
     }
 }

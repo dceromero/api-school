@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using WebApiSchool.Entitys;
 using WebApiSchool.Persitences;
 using WebApiSchool.Requests;
@@ -12,14 +9,14 @@ namespace WebApiSchool.Services
     {
         private readonly NotasRep _notasRep;
 
-        public NotasServiceImp( NotasRep notasRep)
+        public NotasServiceImp(NotasRep notasRep)
         {
             _notasRep = notasRep;
         }
 
         public List<OtherNoteEntity> getOtherNote(string codPlanilla, string usuario)
         {
-          return  _notasRep.getOtherNote(codPlanilla, usuario);
+            return _notasRep.getOtherNote(codPlanilla, usuario);
         }
 
         public void saveNota(List<ReqSaveNota> save)

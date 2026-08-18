@@ -10,11 +10,11 @@ namespace WebApiSchool
     {
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
-            
+            var container = new UnityContainer();
+
             // register all your components with the container here
             // it is NOT necessary to register your controllers
-            
+
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<UsuarioRep, UsuarioRepImp>();
             container.RegisterType<UsuarioService, UsuarioServiceImp>();
@@ -29,7 +29,7 @@ namespace WebApiSchool
             container.RegisterType<LogroService, LogroServiceImp>();
 
             container.RegisterType<EvaluacionesRep, EvaluacionesRepImp>();
-            container.RegisterType<EvaluacionService, EvaluacionServiceImp>();  
+            container.RegisterType<EvaluacionService, EvaluacionServiceImp>();
 
             container.RegisterType<NotasRep, NotasRepImp>();
             container.RegisterType<NotasService, NotasServiceImp>();

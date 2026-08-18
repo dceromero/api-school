@@ -1,7 +1,7 @@
-﻿using Microsoft.Owin;
-using Microsoft.Owin.Security.Jwt;
+﻿using Microsoft.IdentityModel.Tokens;
+using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.Owin.Security.Jwt;
 using Owin;
 using System.Text;
 

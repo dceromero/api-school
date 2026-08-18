@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
@@ -21,7 +18,7 @@ namespace WebApiSchool.WebApi
         public HttpResponseMessage GetTiposEvaluaciones()
         {
             var resultados = _evaluacionService.GetTiposEvaluaciones();
-            return Request.CreateResponse(HttpStatusCode.OK,resultados);
+            return Request.CreateResponse(HttpStatusCode.OK, resultados);
         }
     }
 }

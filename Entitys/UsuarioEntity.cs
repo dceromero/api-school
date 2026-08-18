@@ -1,6 +1,5 @@
 namespace WebApiSchool.Persitences
 {
-    using System;
     using System.ComponentModel.DataAnnotations;
 
     public partial class UsuarioEntity
@@ -10,8 +9,8 @@ namespace WebApiSchool.Persitences
         public string nombreUsr { get; set; }
 
         [StringLength(50)]
-        public string nombreComp { get; set; }   
-        
+        public string nombreComp { get; set; }
+
         public string psw { get; set; }
 
         [StringLength(20)]

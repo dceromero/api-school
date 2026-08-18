@@ -3,7 +3,7 @@ using System.Linq;
 using WebApiSchool.Entitys;
 
 namespace WebApiSchool.Persitences
-{ 
+{
     public class VencimientosRepImp : VencimientosRep
     {
         private readonly ModelSchool _context;
@@ -15,7 +15,7 @@ namespace WebApiSchool.Persitences
         public List<VecimientosEntity> GetVencimientos(string user)
         {
             string sqlGetVencimientos = $"select  * from vw_vencimientos where nombreUsr = '{user}'";
-           return _context.Database.SqlQuery<VecimientosEntity>(sqlGetVencimientos).ToList();             
+            return _context.Database.SqlQuery<VecimientosEntity>(sqlGetVencimientos).ToList();
         }
 
         public List<RespGrado> GetGrados(string user)

@@ -11,10 +11,10 @@ namespace WebApiSchool.Persitences
             Database.SetInitializer<ModelSchool>(null);
         }
 
-        public virtual DbSet<UsuarioEntity> UsuarioEntities{ get; set; }
+        public virtual DbSet<UsuarioEntity> UsuarioEntities { get; set; }
 
         public virtual DbSet<MenuEntity> MenuEntities { get; set; }
 
-    
+
     }
 }

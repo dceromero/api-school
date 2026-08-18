@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace WebApiSchool.Entitys
+﻿namespace WebApiSchool.Entitys
 {
     public class RespAsignatura
     {

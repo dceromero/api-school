@@ -14,7 +14,7 @@ namespace WebApiSchool.Responses
         [DataMember]
         public string userGroup { get; set; }
 
-        [DataMember] 
+        [DataMember]
         public string yearActual { get; set; }
 
         [DataMember]
