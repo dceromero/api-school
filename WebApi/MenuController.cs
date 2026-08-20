@@ -22,5 +22,14 @@ namespace WebApiSchool.WebApi
             var menu = this.service.GetMenuByUserGroup(grupoUsr);
             return Request.CreateResponse(HttpStatusCode.OK, menu);
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public string getHelloWorld()
+        {
+            return "Hola mundo";
+        }
     }
+
+
 }
