@@ -37,5 +37,10 @@ namespace WebApiSchool.Services
                 cantNotasIng = data.cantNotasIng
             }).ToList();
         }
+
+        public List<RespGruop> GetGroups()
+        {
+            return repository.GetGroups();
+        }
     }
 }

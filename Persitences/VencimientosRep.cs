@@ -10,5 +10,7 @@ namespace WebApiSchool.Persitences
         List<RespGrado> GetGrados(string user);
 
         List<RespAsignatura> GetAsignaturas(string user, string grado);
+
+        List<RespGruop> GetGroups();
     }
 }

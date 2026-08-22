@@ -29,5 +29,12 @@ namespace WebApiSchool.Persitences
             string sqlGetAsign = $"select distinct codAsignatura, asignatura from vw_vencimientos where nombreUsr = '{user}' and codGrado ='{grado}'";
             return _context.Database.SqlQuery<RespAsignatura>(sqlGetAsign).ToList();
         }
+
+        public List<RespGruop> GetGroups()
+        {
+            string sqlGetAsign = $"select * from vw_grupos";
+            return _context.Database.SqlQuery<RespGruop>(sqlGetAsign).ToList();
+        }
+
     }
 }

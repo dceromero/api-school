@@ -28,16 +28,24 @@ namespace WebApiSchool.WebApi
         [Route("grados-by-user")]
         public HttpResponseMessage GetGrados(string user)
         {
-            var vencimientos = this.service.GetGrados(user);
-            return Request.CreateResponse(HttpStatusCode.OK, vencimientos);
+            var grados = this.service.GetGrados(user);
+            return Request.CreateResponse(HttpStatusCode.OK, grados);
         }
 
         [HttpGet]
         [Route("asignatura-by-user-and-grado")]
         public HttpResponseMessage GetAsignatura(string user, string grado)
         {
-            var vencimientos = this.service.GetAsignaturas(user, grado);
-            return Request.CreateResponse(HttpStatusCode.OK, vencimientos);
+            var asign = this.service.GetAsignaturas(user, grado);
+            return Request.CreateResponse(HttpStatusCode.OK, asign);
+        }
+
+        [HttpGet]
+        [Route("get-groups")]
+        public HttpResponseMessage GetGroups()
+        {
+            var groups = this.service.GetGroups();
+            return Request.CreateResponse(HttpStatusCode.OK, groups);
         }
     }
 }
