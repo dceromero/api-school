@@ -43,7 +43,8 @@ namespace WebApiSchool.Services
                 pc2 = lg.pc2,
                 pc3 = lg.pc3,
                 pc4 = lg.pc4,
-                cantLogros = lg.cantLogros
+                cantLogros = lg.cantLogros,
+                id = lg.Id
             }).ToList();
         }
 

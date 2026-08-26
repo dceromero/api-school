@@ -70,7 +70,7 @@ namespace WebApiSchool.Persitences
 
         public List<RespVWNotas> getNotasByCodLogro(string codLogro, string idPlanilla)
         {
-            string tsql = $"SELECT *, DATEPART(ISO_WEEK, GETDATE()) as numSemana FROM vw_calificar_logros WHERE CodLogro = '{codLogro}' and idPlanilla ='{idPlanilla}'";
+            string tsql = $"SELECT *, DATEPART(ISO_WEEK, GETDATE()) as numSemana FROM vw_calificar_logros WHERE CodLogro = '{codLogro}' and idPlanilla ='{idPlanilla}' order by Apellidos, Nombres ";
             return _context.Database.SqlQuery<RespVWNotas>(tsql).ToList();
         }
     }

@@ -12,6 +12,7 @@
         public decimal n3 { get; set; }
         public decimal n4 { get; set; }
         public int numSemana { get; set; }
+        public bool seguimiento { get; set; }
 
         public bool piar { get; set; }
     }
