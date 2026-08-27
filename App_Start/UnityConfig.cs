@@ -40,6 +40,9 @@ namespace WebApiSchool
             container.RegisterType<EvaluacionesRep, EvaluacionesRepImp>();
             container.RegisterType<EvaluacionService, EvaluacionServiceImp>();
 
+            container.RegisterType<ContenidoRep, ContenidoResImp>();
+            container.RegisterType<ContenidoService, ContenidoServiceImp>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
