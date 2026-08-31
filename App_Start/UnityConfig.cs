@@ -43,6 +43,9 @@ namespace WebApiSchool
             container.RegisterType<ContenidoRep, ContenidoResImp>();
             container.RegisterType<ContenidoService, ContenidoServiceImp>();
 
+            container.RegisterType<ComentarioRep, ComentarioRepImp>();
+            container.RegisterType<CommentService, CommentServiceImp>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
