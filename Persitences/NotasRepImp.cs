@@ -22,7 +22,11 @@ namespace WebApiSchool.Persitences
         }
         public void saveNota(List<ReqSaveNota> req)
         {
-            req.AsParallel().ForAll(x => saveNotaOne(x));
+            foreach (var item in req)
+            {
+                saveNotaOne(item);
+            }
+            // req.AsParallel().ForAll(x => saveNotaOne(x));
         }
 
         public List<OtherNoteEntity> getOtherNote(string codPlanilla, string usuario)
