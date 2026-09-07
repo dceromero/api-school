@@ -187,9 +187,14 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Entitys\ContenidoEntity.cs" />
     <Compile Include="Entitys\HelperEvalEntity.cs" />
     <Compile Include="Entitys\LogroEntity.cs" />
     <Compile Include="Entitys\OtherNoteEntity.cs" />
+    <Compile Include="Persitences\ComentarioRep.cs" />
+    <Compile Include="Persitences\ComentarioRepImp.cs" />
+    <Compile Include="Persitences\ContenidoRep.cs" />
+    <Compile Include="Persitences\ContenidoResImp.cs" />
     <Compile Include="Persitences\EvaluacionesRep.cs" />
     <Compile Include="Persitences\EvaluacionesRepImp.cs" />
     <Compile Include="Persitences\LogrosRep.cs" />
@@ -198,6 +203,12 @@
     <Compile Include="Persitences\NotasRepImp.cs" />
     <Compile Include="Persitences\ObservadorNotaRepImp.cs" />
     <Compile Include="Persitences\ObservadorNotaRep.cs" />
+    <Compile Include="Requests\ReqFindComment.cs" />
+    <Compile Include="Requests\ReqEvaluation.cs" />
+    <Compile Include="Requests\ReqSaveComment.cs" />
+    <Compile Include="Responses\RespComment.cs" />
+    <Compile Include="Responses\RespEvaluaciones.cs" />
+    <Compile Include="Responses\RespGruop.cs" />
     <Compile Include="Responses\RespObsNota.cs" />
     <Compile Include="Requests\ReqFindLogros.cs" />
     <Compile Include="Requests\ReqGetCodPlanilla.cs" />
@@ -231,6 +242,10 @@
     <Compile Include="Responses\RespUsuario.cs" />
     <Compile Include="Responses\RespVencimiento.cs" />
     <Compile Include="Responses\RespVWNotas.cs" />
+    <Compile Include="Services\CommentService.cs" />
+    <Compile Include="Services\CommentServiceImp.cs" />
+    <Compile Include="Services\ContenidoService.cs" />
+    <Compile Include="Services\ContenidoServiceImp.cs" />
     <Compile Include="Services\EvaluacionService.cs" />
     <Compile Include="Services\EvaluacionServiceImp.cs" />
     <Compile Include="Services\LogroService.cs" />
@@ -246,6 +261,8 @@
     <Compile Include="Services\VencimientosService.cs" />
     <Compile Include="Services\VencimientosServiceImp.cs" />
     <Compile Include="WebApi\AuthController.cs" />
+    <Compile Include="WebApi\CommentController.cs" />
+    <Compile Include="WebApi\ContenidoController.cs" />
     <Compile Include="WebApi\EvaluacionController.cs" />
     <Compile Include="WebApi\LogroController.cs" />
     <Compile Include="WebApi\MenuController.cs" />
@@ -261,6 +278,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="webdesktop.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
