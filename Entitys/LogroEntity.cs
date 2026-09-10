@@ -15,7 +15,7 @@
         public decimal pc3 { get; set; }
         public decimal pc4 { get; set; }
         public int cantLogros { get; set; }
-
         public int Id { get; set; }
+        public int nroEval { get; set; }
     }
 }
